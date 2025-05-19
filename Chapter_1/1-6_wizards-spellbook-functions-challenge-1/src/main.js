@@ -63,4 +63,19 @@ function determineSpellStrength(powerLevel) {
 console.log(determineSpellStrength(10))
 
 
+function transformation(ingredients, transformFn){
+    let result = []
+    for (let i = 0; i < ingredients.length; i++) {
+        result.push(transformFn(ingredients[i]));
+        
+    }
+}
 
+let enchanted = transformIngredients([
+         'newt eyes',
+         'toe of frog',
+         'wool of bat',
+         'tongue of dog'
+      ], (ingredient) => `enchanted ${ingredient}`)
+
+      console.log(transformIngredients())
